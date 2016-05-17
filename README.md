@@ -18,23 +18,23 @@ The plugins that I use:
  - indentline @ https://github.com/Yggdroot/indentLine
  
 
-My setup looks like this:
+My setup looks like this: <br />
 
 /root/.vim <br />
-|
+| <br />
 |__autoload <br />
 |....|__pathogen.vim <br />
-|
-|__bundle
-|....|__delimitmate //the whole git repo (git cloned it here)
-|........|__autoload 
-|........|....|__delimitMate.vim
-|........|__doc
-|........|....|__delimitMate.txt
-|........|__plugin
-|.............|__delimitMate.vim
-|
-|__plugin
-|....|__delimitMate.vim (from bundle/delimitmate/plugin)
-|....|__indentLine.vim
-|....|__supertab.vim
+| <br />
+|__bundle <br />
+|....|__delimitmate //the whole git repo (git cloned it here) <br />
+|........|__autoload <br />
+|........|....|__delimitMate.vim <br />
+|........|__doc <br />
+|........|....|__delimitMate.txt <br />
+|........|__plugin <br />
+|.............|__delimitMate.vim <br />
+| <br />
+|__plugin <br />
+|....|__delimitMate.vim (from bundle/delimitmate/plugin) <br />
+|....|__indentLine.vim <br />
+|....|__supertab.vim <br />

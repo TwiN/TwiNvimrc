@@ -26,7 +26,7 @@ My setup looks like this: <br />
 |....|__pathogen.vim <br />
 | <br />
 |__bundle <br />
-|....|__delimitmate //the whole git repo (git cloned it here) <br />
+|....|__delimitmate <i>//the whole git repo (git cloned it here)</i> <br />
 |........|__autoload <br />
 |........|....|__delimitMate.vim <br />
 |........|__doc <br />

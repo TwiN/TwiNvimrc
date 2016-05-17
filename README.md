@@ -20,10 +20,10 @@ The plugins that I use:
 
 My setup looks like this:
 
-/root/.vim 
+/root/.vim <br />
 |
-|__autoload
-|....|__pathogen.vim
+|__autoload <br />
+|....|__pathogen.vim <br />
 |
 |__bundle
 |....|__delimitmate //the whole git repo (git cloned it here)
@@ -31,18 +31,10 @@ My setup looks like this:
 |........|....|__delimitMate.vim
 |........|__doc
 |........|....|__delimitMate.txt
-
 |........|__plugin
-
 |.............|__delimitMate.vim
-
 |
-
 |__plugin
-
 |....|__delimitMate.vim (from bundle/delimitmate/plugin)
-
 |....|__indentLine.vim
-
 |....|__supertab.vim
-

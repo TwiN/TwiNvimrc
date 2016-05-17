@@ -5,6 +5,6 @@ This is simply the vimrc that I have built over time. It also contains features 
 
 It also contains some personal shortcuts, such as:
  - jk  -> faster way to escape 
- - <F1> -> same as escape, I keep hitting <F1> instead of <ESC>..
- - <F2> -> toggles paste mode on/off
+ - F1 -> same as escape, I keep hitting F1 instead of ESC
+ - F2 -> toggles paste mode on/off
  - and a few other typos..

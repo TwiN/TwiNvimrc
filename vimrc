@@ -6,7 +6,11 @@ if !empty(glob("/root/.vim/autoload/pathogen.vim"))
 endif
 
 " Patch for indentLine.vim
+<<<<<<< HEAD
 "au BufRead,BufEnter,BufNewFile * IndentLinesReset
+=======
+au BufRead,BufEnter,BufNewFile * IndentLinesReset
+>>>>>>> 35e2ca998f0cec5d2ea6c2781118b9fcd6a1e522
 
 " enables syntax highlighting by default.
 if has("syntax")

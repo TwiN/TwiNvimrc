@@ -2,9 +2,9 @@
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      2.4
 
-" Install in $HOME\vimfiles\autoload (or ~\vimfiles\autoload).
+" Install in ~/.vim/autoload (or ~\vimfiles\autoload).
 "
-" For management of individually installed plugins in $HOME\vimfiles\bundle (or
+" For management of individually installed plugins in ~/.vim/bundle (or
 " ~\vimfiles\bundle), adding `execute pathogen#infect()` to the top of your
 " .vimrc is the only other setup necessary.
 "
@@ -97,10 +97,12 @@ function! pathogen#is_disabled(path) abort
     return 1
   endif
   let sep = pathogen#slash()
-  let blacklist = map(
+  let blacklist =
         \ get(g:, 'pathogen_blacklist', get(g:, 'pathogen_disabled', [])) +
-        \ pathogen#split($VIMBLACKLIST),
-        \ 'substitute(v:val, "[\\/]$", "", "")')
+        \ pathogen#split($VIMBLACKLIST)
+  if !empty(blacklist)
+    call map(blacklist, 'substitute(v:val, "[\\/]$", "", "")')
+  endif
   return index(blacklist, fnamemodify(a:path, ':t')) != -1 || index(blacklist, a:path) != -1
 endfunction
 
@@ -109,7 +111,7 @@ endfunction
 function! pathogen#surround(path) abort
   let sep = pathogen#slash()
   let rtp = pathogen#split(&rtp)
-  let path = fnamemodify(a:path, ':p:s?[\\/]\=$??')
+  let path = fnamemodify(a:path, ':s?[\\/]\=$??')
   let before = filter(pathogen#expand(path), '!pathogen#is_disabled(v:val)')
   let after = filter(reverse(pathogen#expand(path, sep.'after')), '!pathogen#is_disabled(v:val[0:-7])')
   call filter(rtp, 'index(before + after, v:val) == -1')

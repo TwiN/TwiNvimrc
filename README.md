@@ -24,17 +24,9 @@ My setup looks like this: <br />
 | <br />
 |__autoload <br />
 |....|__pathogen.vim <br />
-| <br />
-|__bundle <br />
-|....|__delimitmate <i>//the whole git repo (git cloned it here)</i> <br />
-|........|__autoload <br />
-|........|....|__delimitMate.vim <br />
-|........|__doc <br />
-|........|....|__delimitMate.txt <br />
-|........|__plugin <br />
-|.............|__delimitMate.vim <br />
+|....|__delimitMate.vim 
 | <br />
 |__plugin <br />
-|....|__delimitMate.vim (from bundle/delimitmate/plugin) <br />
+|....|__delimitMate.vim <br />
 |....|__indentLine.vim <br />
 |....|__supertab.vim <br />

@@ -24,7 +24,7 @@ My setup looks like this: <br />
 | <br />
 |__autoload <br />
 |....|__pathogen.vim <br />
-|....|__delimitMate.vim 
+|....|__delimitMate.vim <br />
 | <br />
 |__plugin <br />
 |....|__delimitMate.vim <br />

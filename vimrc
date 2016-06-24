@@ -95,9 +95,6 @@ nnoremap <Down> :echoe "Down = J"<CR>
 " Faster escape
 inoremap jk <ESC>
 
-" Saving in insert mode (this is troublesome for CSS..)
-"inoremap :w <ESC>:w<CR>  
-
 " Typos
 iabbrev mathin margin
 iabbrev hmtl html

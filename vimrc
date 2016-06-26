@@ -87,10 +87,10 @@ imap <F1> <ESC>
 nmap <F1> <ESC>
 
 " No arrows 
-nnoremap <Left> :echoe "Left = H"<CR>
-nnoremap <Right> :echoe "Right = L"<CR>
-nnoremap <Up> :echoe "Up = K"<CR>
-nnoremap <Down> :echoe "Down = J"<CR>
+nnoremap <Left> :echoe "H = Left"<CR>
+nnoremap <Right> :echoe "L = Right"<CR>
+nnoremap <Up> :echoe "K = Up"<CR>
+nnoremap <Down> :echoe "J = Down"<CR>
 
 " Faster escape
 inoremap jk <ESC>

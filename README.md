@@ -15,7 +15,6 @@ The plugins that I use:
  - pathogen @ https://github.com/tpope/vim-pathogen
  - delimitmate @ https://github.com/Raimondi/delimitMate
  - supertab @ https://github.com/ervandew/supertab
- - indentline @ https://github.com/Yggdroot/indentLine
  
 
 My setup looks like this: <br />
@@ -28,5 +27,4 @@ My setup looks like this: <br />
 | <br />
 |__plugin <br />
 |....|__delimitMate.vim <br />
-|....|__indentLine.vim <br />
 |....|__supertab.vim <br />

@@ -3,6 +3,7 @@ set nocompatible
 " checks if pathogen is installed and run it if it is
 if !empty(glob("/root/.vim/autoload/pathogen.vim"))
     execute pathogen#infect()
+    let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 endif
 
 " enables syntax highlighting by default.

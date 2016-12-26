@@ -90,6 +90,7 @@ set autowrite "write to file if modified by another program
 set autoread "read to file if modified by another program
 set enc=utf-8 "encoding
 set title "terminal name => file name
+set wrap! "no word wrap
 
 " Copy-paste related
 set pastetoggle=<F2>

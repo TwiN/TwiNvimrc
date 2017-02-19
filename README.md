@@ -1,5 +1,4 @@
 # TwiNvimrc
-TwiN's vimrc
 
 This is simply the vimrc that I have built over time. It also contains features that I left there when I was still a beginner, such as a mapping that prevents the user from using the arrows.
 
@@ -12,11 +11,14 @@ It also contains some personal shortcuts, such as:
  - and a few other typos..
 
 ## Plugins
+
 The plugins that I use:
  - pathogen @ https://github.com/tpope/vim-pathogen
  - delimitmate @ https://github.com/Raimondi/delimitMate
  - supertab @ https://github.com/ervandew/supertab
+
 ### Extra
+
 When I need to have C++ autocompletion for a specific machine, I use:
  - clang_complete @ https://github.com/Rip-Rip/clang_complete
 

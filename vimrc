@@ -18,6 +18,10 @@ if filereadable("/etc/vim/vimrc.local")
     source /etc/vim/vimrc.local
 endif
 
+
+let g:clang_library_path = '/usr/lib/clang'
+
+
 " Custom settings
 "-----------------------"
 "----- INDENTATION -----"

@@ -1,5 +1,5 @@
 main:
-	make install
+	make full
 
 get_clang:
 	git clone https://github.com/TwinProduction/clang_complete.git
@@ -8,18 +8,18 @@ get_clang:
 
 install_to_root:
 	sudo mkdir -p /root/.vim/autoload /root/.vim/doc /root/.vim/plugin
-	sudo cp autoload/* /root/.vim/autoload/
-	sudo cp doc/* /root/.vim/doc/
-	sudo cp plugin/* /root/.vim/plugin/
+	sudo cp -a autoload/* /root/.vim/autoload/
+	sudo cp -a doc/* /root/.vim/doc/
+	sudo cp -a plugin/* /root/.vim/plugin/
 
 install_to_current_user:
 	sudo mkdir -p ~/.vim/autoload ~/.vim/doc ~/.vim/plugin
-	cp autoload/* ~/.vim/autoload/
-	cp doc/* ~/.vim/doc/
-	cp plugin/* ~/.vim/plugin/
+	cp -a autoload/* ~/.vim/autoload/
+	cp -a doc/* ~/.vim/doc/
+	cp -a plugin/* ~/.vim/plugin/
 
 install: install_to_root install_to_current_user
 	sudo mv vimrc /etc/vim/vimrc
 
-full-install: get_clang install
+full: get_clang install
 	

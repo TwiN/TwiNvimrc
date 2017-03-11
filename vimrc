@@ -19,7 +19,7 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 
-let g:clang_library_path = '/usr/lib/clang'
+let g:clang_library_path = '/usr/lib/libclang.so'
 
 
 " Custom settings

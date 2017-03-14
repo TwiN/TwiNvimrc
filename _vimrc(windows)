@@ -44,7 +44,7 @@ colorscheme torte
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll bar
-set guifont=Consolas:h11
+set guifont=Consolas:h13
 "set backupdir=E:\Dropbox\BACKUP\GVimBackupDir
 set noundofile
 

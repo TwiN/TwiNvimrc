@@ -38,12 +38,12 @@ If you had not installed python3-dev before you installed vim, it'll be easier t
 Type the following in the terminal for...
 
 #### Install without clang_complete:
-`make install`
+`sudo make install`
 
 #### Install with clang_complete:
-`make` 
+`sudo make` 
 or 
-`make full`
+`sudo make full`
 
 
 ## Troubleshooting

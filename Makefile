@@ -1,5 +1,5 @@
 main:
-	make full
+	sudo make full
 
 get_clang:
 	git clone https://github.com/TwinProduction/clang_complete.git

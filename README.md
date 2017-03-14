@@ -22,6 +22,15 @@ When I need to have C++ autocompletion for a specific machine, I use:
  - clang_complete @ https://github.com/Rip-Rip/clang_complete
 
 
+## Before the installation
+Make sure that the following are installed: python3-dev clang
+If they are not installed, type the following in your terminal:
+`sudo apt-get install python3-dev clang`
+
+If you had not installed python3-dev before you installed vim, it'll be easier to simply remove vim and reinstall it (it's faster than recompiling vim with python support).
+`sudo apt-get remove vim`
+*NOTE: There might be a couple of other programs linked to vim that are currently installed, such as vim-tiny and vim-runtime. Remove them aswell.*
+
 ## Installation
 Type the following in the terminal for...
 

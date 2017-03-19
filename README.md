@@ -4,6 +4,8 @@ This is simply the vimrc that I have built over time. It also contains features 
 
 __NOTE__: this is not really meant to be used for others; it's more of a note/backup for me, but if you happen to stumble upon it, well, that's that.
 
+__NOTE 2__: you will most likely need to modify the vimrc if you do the full install which includes clang_complete. See the troubleshooting section for more information.
+
 It also contains some personal shortcuts, such as:
  - F1 -> same as escape, I keep hitting F1 instead of ESC
  - F2 -> toggles paste mode on/off
@@ -50,7 +52,8 @@ or
 ### Loading libclang failed, completion won't be available.
 **Possible causes**: 
 - You haven't installed clang (`sudo apt-get install clang`) 
-- The path set in */etc/vim/vimrc* isn't correct. To fix your path, find where *libclang.so* (or *libclang.so.1* in some cases) is and replace the content for the line `let g:clang_library_path = '...'` in */etc/vim/vimrc*
+- The path set in */etc/vim/vimrc* isn't correct. To fix your path, find where *libclang.so* (or *libclang.so.1* in some cases) is and replace the content for the line `let g:clang_library_path = '...'` in */etc/vim/vimrc*. 
+- It is also possible that your version of LLVM is different from mine. In that case, you'll need to modify the vimrc file's global variable `let g:clang_library_path = '...'` to match the version you have available (`/usr/lib/llvm-#.#/lib/libclang.so.1`). ex: If you navigate to `/usr/lib/` and you see that you have a folder called `llvm-3.4`, the correct path in the variable `g:clang_library_path` will be something like `/usr/lib/llvm-3.4/lib/libclang.so.1`
 
 
 ## Folder setup (does not include clang)

@@ -49,6 +49,8 @@ set scrolloff=3 "always show 3 lines ahead of current line while scrolling
 set sidescrolloff=15
 set sidescroll=1
 
+" Theme
+color elflord
 
 "-----------------------"
 "--------- MISC --------"
@@ -107,4 +109,6 @@ nmap :X :x
 nmap :W :w
 nmap :Q :q
 nmap ; :
+
+
 
